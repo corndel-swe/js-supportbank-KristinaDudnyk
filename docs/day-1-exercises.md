@@ -47,10 +47,10 @@ You'll have seen and used some `import` and `export` statements in the code
 you've been working with. This exercise is about setting that up for the
 project.
 
-- [ ] Read the docs on
+- [x] Read the docs on
       [import and export](https://tech-docs.corndel.com/js/imports-and-exports.html).
 
-- [ ] Configure the `package.json` file to
+- [x] Configure the `package.json` file to
       [use ES6 imports](https://tech-docs.corndel.com/js/imports-and-exports.html#configuring-the-project).
       Run `npm run test:d1e2` - the first test should be passing.
 
