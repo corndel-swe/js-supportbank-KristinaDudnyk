@@ -83,7 +83,7 @@ Let's set up a CLI so that we can run the program from the command line.
       [Import and register](https://tech-docs.corndel.com/js/making-a-cli.html#register-the-command)
       it with the CLI in `cli/index.js`.
 
-- [ ] Right now, the `transaction log` command doesn't do anything. We want to
+- [x] Right now, the `transaction log` command doesn't do anything. We want to
       make it so that it logs the transactions to the console. Make it log a
       transaction nicely, so that the command
 
@@ -97,7 +97,7 @@ Let's set up a CLI so that we can run the program from the command line.
       At 01/03/2024 11:27am, Jon A sent Joe G £100
       ```
 
-- [ ] All tests should now be passing. Commit and push!
+- [x] All tests should now be passing. Commit and push!
 
 Congratulations! Your project is set up with git, testing, ES6 Modules and
 commander. :tada:
