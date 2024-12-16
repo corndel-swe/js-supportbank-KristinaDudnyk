@@ -1,23 +1,20 @@
-class Currency {
+import ExchangeRate from './ExchangeRate.js'
+
+class Currency extends ExchangeRate {
   constructor(num, from, to) {
+    super()
     this.num = num
     this.from = from
     this.to = to
   }
 
-  convert(num, from, to) {
-    switch (from) {
-      case 'USD':
-        switch (to) {
-          case 'GBP':
-            return (num * 0.8).toFixed(3)
-          case 'EUR':
-            return (num * 0.92).toFixed(3)
-          default:
-            throw new Error(`Unsupported target currency: ${to}`)
-        }
-      default:
-        throw new Error(`Unsupported base currency: ${from}`)
+  async convert(num, from, to) {
+    try {
+      const rate = await this.getRate(from, to)
+      return (num * rate).toFixed(3)
+    } catch (error) {
+      console.error('Error in conversion:', error)
+      return 'Error in conversion'
     }
   }
 }
