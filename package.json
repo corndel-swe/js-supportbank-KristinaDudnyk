@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "commander": "^12.1.0",
-    "dotenv": "^16.4.7"
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.7",
+    "ora": "^8.1.1"
   }
 }
